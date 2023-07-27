@@ -1,0 +1,16 @@
+.login{
+  
+    flex-direction: column;
+     width: 210px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: antiquewhite;
+   /* margin-left: 15rem; */
+   border-radius: 1rem;
+   text-align: center;
+}
+
+.login-container{
+ text-align: center;
+}

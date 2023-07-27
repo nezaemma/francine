@@ -1,0 +1,324 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+nav{
+    background-color: brown;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container{
+    color: rgb(154, 124, 182);
+    padding: 1rem;
+    font-weight: bold;
+}
+.home-container{
+  background-color: rgb(124, 124, 223);
+ 
+  
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    padding: 1rem;
+}
+.nav-link{
+    text-decoration: none;
+    color: #adaaaa;
+    font-style: italic;
+    position: relative;
+}
+.nav-link::after{
+   content: '';
+   background-color: red;
+   height: 3px;
+   left: 0;
+   width: 0;
+   bottom: -8px;
+   position: absolute;
+   transition: all .3s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+.nav-link:hover{
+    color: aqua;
+}
+.contact-container{
+    background-color: rgb(156, 153, 150);
+}
+.contact-container h1{
+    padding: 1rem;
+}
+.butto{
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+}
+.contact-us{
+
+    padding: 1rem;
+}
+.contact{
+    background-color: rgb(165, 148, 148);
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    flex-direction: column;
+}
+.contact input{
+    display: flex;
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+.hm{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+  
+
+}
+.image-para{
+    display: flex;
+    justify-content: space-between;
+}
+.home-cont{
+    background-color: rgb(160, 158, 156);
+}
+.par-graph{
+padding: 3rem;
+    font-size: 2rem;
+
+    margin-top: 3rem;
+    text-align: center;
+    align-items: center;
+}
+.image-container img{
+   
+    /* width: 300px;
+    height: 400px; */
+  
+    border-radius: 20px;
+    
+}
+.about-container{
+  color: black;
+    margin: 3rem;
+
+}
+
+.about-me{
+    background-color: rgb(133, 133, 138);
+    
+}
+.html-cntainer{
+    display: flex;
+    margin: 3rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.html{
+    background-color: brown;
+    padding: 4rem;
+    border-radius: 2rem;
+    border-style: dashed;
+    /* outline-offset: 9px; */
+}
+.header{
+    color: rgb(221, 217, 217);
+
+}
+.css-container{
+    background-color: brown;
+    padding: 4rem;
+    border-radius: 2rem;
+    border-style: dashed;
+    
+}
+.card{
+    background-color: brown;
+    padding: 4rem;
+    border-radius: 2rem;
+    border-style: dashed;   
+}
+
+
+.about-me{
+    padding: 1rem;
+}
+
+.my-skills{
+    display: flex;
+    margin: 3rem;
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.menu-css{
+    background-color: brown;
+    padding: 3rem;
+    border-radius: 2rem;
+
+}
+.css-containn{
+    background-color: brown;
+    padding: 3rem;
+    border-radius: 2rem;
+
+
+}
+.js-container{
+    background-color: brown;
+    padding: 3rem;
+    border-radius: 2rem; 
+}
+.heater{
+    color: rgb(206, 201, 201);
+    
+
+}
+.head-container{
+    padding: 2rem;
+    color: black;
+}
+.sos-container{
+    color: rgb(173, 167, 167);
+}
+.container-gride{
+    color: rgb(223, 217, 217);
+}
+.skills-me{
+    background-color:rgb(68, 68, 73) ;
+
+}
+.skills-me h3{
+
+    padding: 1rem;
+}
+.about-me h2{
+    padding: 1rem;
+}
+input{
+    font-size: 2rem;
+    display: block;
+    margin: 3rem;
+}
+
+.us-me{
+    background-color: rgb(124, 124, 223) ;
+}
+.button-container text-center{
+    padding: 2rem;
+}
+.in-container{
+  /* color: brown; */
+justify-content: center;
+
+}
+
+.log-container{
+   background-color: brown;
+}
+.gin-container{
+    margin: 3rem;
+    padding: 2rem;
+}
+
+
+
+ 
+/* -------------------responsive---------------- */
+@media(max-width:353px){
+    .image-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:992px){
+    .html-cntainer{
+        display: grid;
+     
+        grid-template-columns: repeat(2,1fr);
+    }
+    .my-skills{
+        display: grid;
+     
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:781px){
+    .nav-links{
+        display: none;
+    }
+}
+
+@media(max-width:653px){
+    .html-cntainer{
+   display: flex;
+   flex-direction: column;
+    }
+    .my-skills{
+        display: flex;
+        flex-direction: column;
+         }
+}
+@media(max-width:541px){
+    .contact{
+        width: 100%;
+    }
+}
+@media(max-width:717px){
+    .hm{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .s{
+        width: 100%;
+    }
+    
+}
+/* -------------responsive login------------ */
+/* 
+
+@media(max-width:617px){
+   .login{
+    width: 100%;
+   } 
+   .long{
+    width: 100%;
+   }
+}
+@media(max-width:461px){
+    .login{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .long{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media(mai-width:241px){
+   .login-container{
+    width: 100%;
+}
+
+   } */
