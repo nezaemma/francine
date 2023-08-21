@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="./sign.css">
 </head>
 <body>
     <div class="login-container">
-        <h1 class="long">LOGIN</h1>
+        <h1 class="long">Registration</h1>
         <div class="log-in">
             <div class="login">
-              
-                <label for="">full-names</label>
-                <input type="text" name="names" placeholder="full-names"required>
-                <label for="">Email:</label>
-                <input type="email" name="email" placeholder="email"required>
-                <label for="">password</label>
-                    <input type="text" name="password" placeholder="password"required>
-             <button class="butto">LOGIN</button>
-         
+                <form action="">
+                    <label for="name">userName</label>
+                    <input type="text" name="names" id="name" placeholder="full-names"required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="email"required>
+                    <label for="password">password</label>
+                    <input type="text" name="password" id="password" placeholder="password"required>
+                    <button onclick="submit" class="butto">Submit</button>
+            </form>
             </div>
         </div>
       </div>
+  <script src="signup.js"></script>
+
+    
 </body>
 </html>
