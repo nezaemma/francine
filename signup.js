@@ -10,7 +10,7 @@ form.addEventListener("submit",(e)=>{
 
 
     let user={
-        userName:userName.value,
+        Name:userName.value,
         email:email.value,
         password:password.value
     }
@@ -21,6 +21,7 @@ if(users.find((tipe)=>tipe.email==email.value)){
     users.push(user)
     const ana=JSON.stringify(users)
     localStorage.setItem("users",ana)
+    console.log(localStorage)
     alert("user successfull created")
 }
 })
